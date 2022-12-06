@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{/layout/layout :: main-fragment(
+                                                                     ~{:: title},
+                                                                    'header',
+                                                                    'footer',
+                                                                     ~{:: #css-resources},
+                                                                     ~{:: #js-resources},
+                                                                     ~{:: #main-content}
+                                                                    )}">
+<head>
+    <meta charset="UTF-8">
+    <title>Hướng dẫn mua hàng</title>
+    <th:block id="css-resources">
+
+    </th:block>
+</head>
+<body>
+<main class="main" id="main-content">
+    <nav aria-label="breadcrumb" class="breadcrumb-nav">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/"><i class="icon-home"></i></a></li>
+                <li class="breadcrumb-item active" aria-current="page">Chính sách đổi trả</li>
+            </ol>
+        </div><!-- End .container -->
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="light-title"><strong>Chính sách đổi trả</strong></h2>
+                <h3 style="color: red">Đối với khách hàng ở Hồ Chí Minh hoặc mua hàng trực tiếp tại cửa hàng của MWC</h3>
+                    <p>- Tất cả hàng hóa mua tại website Mwc.com.vn đều được áp dụng chính sách cho phép khách hàng có thể đổi hàng trong vòng 07 ngày trong trường hợp sản phẩm bị trầy xước khi vận chuyển, giao nhầm, giao thiếu, lỗi kỹ thuật, hay không như cam kết trên website và chỉ đổi 01 lần duy nhất với giá bằng hoặc cao hơn, nếu thấp hơn sẽ không được hoàn tiền.</p>
+                    <p>- Khi đến đổi, quý khách vui lòng mang theo sản phẩm trong tình trạng chưa qua sử dụng.</p>
+                <h3 style="color:red;">Đối với khách hàng ở các tỉnh ngoài Hồ Chí Minh khi đặt hàng của MWC</h3>
+                <p>- Trong vòng 7 ngày kể từ ngày nhận hàng (Theo thời gian ghi trong hoá đơn, hoặc mã đơn hàng), quý khách được phép đổi size, đổi mẫu hoặc trả lại hàng và nhận lại tiền.</p>
+                <p>- Quý khách vui lòng thông báo trước về tình trạng sản phẩm, nguyên do đổi hàng qua inbox Fanpgage: http://facebook.com/mwcstore hoặc Hotline: 1900.633.349. Sau đó sẽ nhận được hướng dẫn từ đội ngũ hỗ trợ của MWC Shoes.</p>
+                <p>- Trường hợp Sản phẩm lỗi do nhà sản xuất hoặc bên phía cửa hàng gửi nhầm Sản phẩm của Quý khách. MWC xin chịu hoàn toàn Phí Vận Chuyển để đảm bảo quý khách có một Sản phẩm tốt nhất.</p>
+                <h3 style="color: red">Vui lòng đọc kỹ Điều kiện đổi hàng. Yêu cầu đổi hàng được xem là hợp lệ nếu thỏa mãn đầy đủ các điều kiện sau:</h3>
+                <p>- Chưa qua sử dụng, không bị dơ bẩn. (khi thử các sản phẩm giày dép, bạn nên mang vớ và thử giày trên bề mặt sạch)</p>
+                <p>- Sản phẩm được đổi phải được gửi kèm theo vận đơn được bỏ kèm trong kiện hàng (còn nguyên vẹn) của mwc.com.vn</p>
+                <p>- Sản phẩm được gửi kèm với đầy đủ phụ kiện (bao gồm cả thẻ bảo hành, vỏ hộp sản phẩm...) và quà tặng kèm (nếu có).</p>
+                <p>- Sản phẩm còn trong thời hạn hiệu lực cho phép đổi hàng (07 ngày kể từ thời điểm nhận hàng).</p>
+                <h3 style="color:red;">Phí đổi hàng tại MWC store:</h3>
+                <p>Chi phí đổi hàng là hoàn toàn MIỄN PHÍ khi mua sắm tại Mwc.com.vn Tuy nhiên trường hợp Khách hàng muốn đổi sản phẩm vì lí do chủ quan (Không vừa size, không thích màu...), khách hàng vui lòng chịu phí vận chuyển (nếu trong trường hợp cần chuyển hàng cần đổi về kho Mwc.com.vn)</p>
+                <p>Cảm ơn Quý Khách hàng đã tin tưởng và cho MWC cơ hội được phục vụ Quý Khách!</p>
+            </div><!-- End .col-md-8 -->
+        </div><!-- End .row -->
+    </div><!-- End .container -->
+
+    <div class="mb-8"></div><!-- margin -->
+</main><!-- End .main -->
+<th:block id="js-resources">
+
+</th:block>
+</body>
+</html>
